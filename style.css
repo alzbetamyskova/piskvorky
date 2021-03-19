@@ -30,11 +30,13 @@ body {
 
 .uvodni {
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .container {
   max-width: 370px;
   background-color: #283e50;
+  border-radius: 10px 10px 0 0;
 }
 
 .descr {
