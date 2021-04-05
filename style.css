@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  height: 100%;
+  min-height: 100%;
 }
 *,
   ::after,
@@ -17,18 +17,20 @@ body {
   font-family: 'Arial', sans-serif;
   font-size: 100%;
   color: #ffffff;
-  height: 100%;
   margin: 0;
 }
+
+/* Index.html */
 
 .title {
   font-family: 'Lobster', cursive;
   font-size: 3em;
   font-weight: normal;
   margin: 10px 0 20px;
+  text-align: center;
 }
 
-.uvodni {
+.opening {
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
@@ -37,6 +39,7 @@ body {
   max-width: 370px;
   background-color: #283e50;
   border-radius: 10px 10px 0 0;
+  margin: 100px 0px;
 }
 
 .descr {
@@ -44,7 +47,8 @@ body {
   text-align: center;
 }
 
-.text {
+.text,
+.list {
   line-height: 1.5;
 }
 
@@ -71,4 +75,46 @@ body {
 
 .start:hover {
   background-color: #0090e9;
+}
+
+/* Pravidla.html */
+
+.rules {
+  padding: 20px;
+  padding-top: 0;
+}
+
+ul {
+  list-style-type: decimal;
+  padding-left: 30px;
+}
+
+li {
+  padding-left: 10px;
+}
+
+.char {
+  width: 1em;
+  height: 1em;
+}
+
+.white {
+  filter: invert(100%);
+}
+
+.galery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instruction {
+  max-width: 300px;
+  padding-bottom: 20px;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  opacity: 75%;
 }
