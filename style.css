@@ -35,7 +35,8 @@ body {
   border-radius: 10px 10px 0 0;
 }
 
-.container {
+.container,
+.container__respons {
   max-width: 370px;
   background-color: #283e50;
   border-radius: 10px 10px 0 0;
@@ -106,15 +107,37 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .instruction {
-  max-width: 300px;
-  padding-bottom: 20px;
+  max-width: 100%;
+  padding-bottom: 10px;
 }
+
 
 figcaption {
   text-align: center;
   font-style: italic;
   opacity: 75%;
+}
+
+@media screen and (min-width: 800px) {
+
+  .container__respons {
+    max-width: 720px;
+  }
+
+  .galery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  figure {
+    margin: 20px 10px;
+    text-align: center;
+    flex-basis: calc((100% - 80px) / 2);
+  }
+
 }
