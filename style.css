@@ -61,20 +61,28 @@ body {
   padding: 20px 0;
 }
 
-.rule {
+.rule,
+.home {
   background-color: #1fcca4;
   margin-bottom: 1px;
 }
 
-.start {
+.start,
+.restart {
   background-color: #0197f6;
 }
 
-.rule:hover {
+.rule:hover,
+.rule:focus,
+.home:hover,
+.home:focus {
   background-color: #1cbb96;
 }
 
-.start:hover {
+.start:hover,
+.start:focus,
+.restart:hover,
+.restart:focus {
   background-color: #0090e9;
 }
 
@@ -141,3 +149,65 @@ figcaption {
   }
 
 }
+
+/* Hra.html */
+
+.container-game {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  max-width: 370px;
+  margin: 100px 0;
+}
+
+.interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.buttons-game {
+  display: flex;
+}
+
+span {
+  font-weight: bold;
+}
+
+.home,
+.restart {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.game {
+  margin: 20px;
+  border: 1px solid rgba(37, 37, 37, 0.8);
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game button {
+  border: 1px solid rgba(37, 37, 37, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
+  flex: 1 1 10%;
+  padding: 15px;
+}
+
+.game button:hover,
+.game button:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (min-width: 800px) {
+
+  .container-game {
+    max-width: 80vmin;
+  }
+
+  .game button {
+   padding: 30px;
+  }
