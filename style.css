@@ -201,6 +201,18 @@ span {
   background-color: rgb(238, 214, 237);
 }
 
+.circle {
+  background-image: url(images/circle.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cross {
+  background-image: url(images/cross.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width: 800px) {
 
   .container-game {
