@@ -205,12 +205,21 @@ span {
   background-image: url(images/circle.svg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 50%;
+  animation: bigger 0.10s linear;
 }
 
 .cross {
   background-image: url(images/cross.svg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 50%;
+  animation: bigger 0.10s linear;
+}
+
+@keyframes bigger {
+  0% {background-size: 0%;}
+  100% {background-size: 50%;}
 }
 
 @media screen and (min-width: 800px) {
