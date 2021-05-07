@@ -22,19 +22,32 @@ btnList.forEach(btn => btn.addEventListener('click', function() {
 }));
 
 
-// function() {
-//   if (whoPlays === 'circle') {
-//      btn.classList.add('circle');
-//      btn.disabled = true;
-//      whoPlays = 'cross';
-//   } else if (whoPlays === 'cross') {
-//      btn.classList.add('cross');
-//      btn.disabled = true;
-//      whoPlays = 'circle';
-//   } else {
-//     alert('Chyba!');
-//   }
+const getSymbol = (field) => {
+  if (field.classList.contains('cross')) {
+    return 'cross'
+  } else if (field.classList.contains('circle')) {
+    return 'circle'
+  }
+};
 
-//   imgElm.src = `images/${whoPlays}.svg`;
-// }
+const boardSize = 10;
+
+const fields = document.querySelectorAll('.btn')
+
+const getField = (row, column) => {
+  fields[row * boardSize + column];
+};
+
+const getPosition = (field) => {
+  let box = 0;
+
+  while (box < fields.length && field !== fields[box]) {
+		box++
+	}
+
+	return {
+		row: Math.floor(box / boardSize),
+		column: box % boardSize,
+	}
+};
 
