@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(#615dad, #ffc8da);
+  background-image: linear-gradient(#A7D0CD, #FFE9D6);
   font-family: 'Arial', sans-serif;
   font-size: 100%;
   color: #ffffff;
@@ -38,7 +38,7 @@ body {
 .container,
 .container__respons {
   max-width: 370px;
-  background-color: #283e50;
+  background-color: #4d5c73;
   border-radius: 10px 10px 0 0;
   margin: 100px 0px;
 }
@@ -63,27 +63,27 @@ body {
 
 .rule,
 .home {
-  background-color: #1fcca4;
+  background-color: #DE8971;
   margin-bottom: 1px;
 }
 
 .start,
 .restart {
-  background-color: #0197f6;
+  background-color: #6f9493;
 }
 
 .rule:hover,
 .rule:focus,
 .home:hover,
 .home:focus {
-  background-color: #1cbb96;
+  background-color: #c55a3d;
 }
 
 .start:hover,
 .start:focus,
 .restart:hover,
 .restart:focus {
-  background-color: #0090e9;
+  background-color: #447b79;
 }
 
 /* Pravidla.html */
@@ -191,14 +191,14 @@ span {
 
 .game button {
   border: 1px solid rgb(41, 41, 41);
-  background-color: #d1c7e2;
+  background-color: #4d5c7365;
   width: 10%;
   aspect-ratio: 1 / 1;
 }
 
 .game button:hover,
 .game button:focus {
-  background-color: rgb(238, 214, 237);
+  background-color: #4d5c738c;
 }
 
 .circle {

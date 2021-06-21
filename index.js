@@ -82,6 +82,7 @@ const getPosition = (field) => {
 
 // funkce, která se podívá na symbol políčka a zjistí, jestli jich je v řádku nebo ve sloupci sousedících pět.
 const symbolsToWin = 5;
+
 const isWinningMove = (field) => {
   const origin = getPosition(field);
   const symbol = getSymbol(field);
@@ -134,7 +135,7 @@ const isWinningMove = (field) => {
     return true;
   }
 
-  // Koukni sikmo nahoru doleva
+  // Koukni šikmo nahoru doleva
   let j;
   i = origin.column;
   j = origin.row;
@@ -147,7 +148,7 @@ const isWinningMove = (field) => {
     j--;
   }
 
-  // Koukni sikmo dolu doprava
+  // Koukni šikmo dolu doprava
   i = origin.column;
   j = origin.row;
   while (
@@ -166,7 +167,7 @@ const isWinningMove = (field) => {
 
   let inDiaRight = 1;
 
-  // Koukni sikmo nahoru doprava
+  // Koukni šikmo nahoru doprava
   i = origin.column;
   j = origin.row;
   while (j > 0 && i > 0 && symbol === getSymbol(getField(j - 1, i + 1))) {
@@ -175,7 +176,7 @@ const isWinningMove = (field) => {
     j--;
   }
 
-  // Koukni sikmo dolu doleva
+  // Koukni šikmo dolu doleva
   i = origin.column;
   j = origin.row;
   while (
