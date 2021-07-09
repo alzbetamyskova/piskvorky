@@ -184,7 +184,7 @@ const isWinningMove = (field) => {
     j < boardSize - 1 &&
     symbol === getSymbol(getField(j + 1, i - 1)) //
   ) {
-    inRow++;
+    inDiaRight++;
     i--;
     j++;
   }
